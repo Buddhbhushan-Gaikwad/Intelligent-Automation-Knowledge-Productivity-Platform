@@ -437,6 +437,8 @@ Request:
  "username":"john",
  "password":"password123"
 }
+
+```
 Login
 POST
 
