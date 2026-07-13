@@ -445,10 +445,11 @@ POST
 /api/v1/auth/login
 
 Response:
-
+```json
 {
  "token":"JWT_TOKEN"
 }
+```
 Journal APIs
 Create Journal
 POST
@@ -460,11 +461,12 @@ Headers:
 Authorization: Bearer JWT_TOKEN
 
 Body:
-
+```json
 {
 "title":"Learning Spring Boot",
 "content":"Today I learned Spring Security"
 }
+```
 Get Journals
 GET
 
