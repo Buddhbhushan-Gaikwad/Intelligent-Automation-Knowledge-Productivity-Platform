@@ -487,7 +487,7 @@ docker run -d \
 --name journal-postgres \
 -e POSTGRES_DB=journaldb \
 -e POSTGRES_USER=journaluser \
--e POSTGRES_PASSWORD=journalpass123 \
+-e POSTGRES_PASSWORD=journal***\
 -p 5432:5432 \
 postgres:16
 Start Redis
@@ -524,6 +524,7 @@ Application runs on:
 
 http://localhost:8080
 Environment Variables
+
 DB_URL
 DB_USERNAME
 DB_PASSWORD
@@ -534,12 +535,14 @@ KAFKA_BOOTSTRAP_SERVERS
 
 ELASTICSEARCH_HOST
 
-JWT_SECRET
+JWT_secret
+
 Testing
 
 Testing stack:
 
 JUnit 5
+
 Mockito
 Spring Boot Test
 
